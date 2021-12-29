@@ -8,7 +8,7 @@ public class Main {
         Post post2 = new Post(3213, "lorem ipsum", true);
 
         post.printPost();
-        if (post.equals(post2)){
+        if (post.equals(post2)) {
             post2 = null;
         } else {
             post2.printPost();

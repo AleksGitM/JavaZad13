@@ -7,7 +7,7 @@ public class Post {
     private String content;
     private boolean isPublic;
 
-    public Post(int id, String content, boolean isPublic){
+    public Post(int id, String content, boolean isPublic) {
         this.id = id;
         this.content = content;
         this.isPublic = isPublic;
@@ -20,7 +20,8 @@ public class Post {
         Post post = (Post) o;
         return id == post.id && isPublic == post.isPublic && Objects.equals(content, post.content);
     }
-    public void printPost(){
+
+    public void printPost() {
         System.out.println("Post id: " + this.id + " Post content: " + this.content);
     }
 }
